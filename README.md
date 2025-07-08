@@ -1,4 +1,4 @@
-# Ancilla-Free-Preparation-of-Stabilizer-States
+# Ancilla-Free Preparation of Stabilizer States
 
 An algorithm for finding efficient, non-fault-tolerant, ancilla-free encoding circuits for stabilizer states.
 

@@ -1,4 +1,4 @@
-# Non-Fault-Tolerant-Ancilla-Free-Encoding-For-Stabilizer-Codes
+# Ancilla-Free-Preparation-of-Stabilizer-States
 
 An algorithm for finding efficient, non-fault-tolerant, ancilla-free encoding circuits for stabilizer states.
 

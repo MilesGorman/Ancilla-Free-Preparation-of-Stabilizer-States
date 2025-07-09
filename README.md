@@ -46,7 +46,7 @@ justification of the algorithm’s correctness and performance, please feel free
 The algorithm begins with a set of stabilizer generators for the code. Suppose we have two such stabilizers: $XIZZ$ and $ZZZX$.
 The algorithm selects one stabilizer to encode first. (The selection method is described later.) Let’s say it picks $XIZZ$. Say 
 $XIZZ$ is chosen. The first step is to apply single-qubit gates—specifically Hadamard and phase gates—to convert all $X$
-and $Y$ operators into $Z$s. Next, CNOTs are applied to remove all but one Pauli-$Z$. For instance, applying two CNOTs
+and $Y$ operators into $Z$-s. Next, CNOTs are applied to remove all but one Pauli-$Z$. For instance, applying two CNOTs
 (both targeting the first qubit and controlled on the third and fourth qubits respectively) propagating $ZIZZ$ to $ZIII$.
 These gates are also applied to all the other stabilziers: $ZZZX$ here.
 

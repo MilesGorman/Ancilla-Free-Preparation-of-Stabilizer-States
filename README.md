@@ -46,7 +46,7 @@ justification of the algorithm’s correctness and performance, please feel free
 The algorithm begins with a set of stabilizer generators for the code. Suppose we have two such stabilizers: $XIZZ$ and $ZZZX$.
 The algorithm selects one stabilizer to encode first. (The selection method is described later.) Let’s say it picks $XIZZ$. Say 
 $XIZZ$ is chosen. The first step is to apply single-qubit gates—specifically Hadamard and phase gates—to convert all $X$
-and $Y$ operators into $Z$-s. Next, CNOTs are applied to remove all but one Pauli-$Z$. For instance, applying two CNOTs
+and $Y$ operators into $Z$-s. Next, CNOTs are applied to remove all but one Pauli $Z$. For instance, applying two CNOTs
 (both targeting the first qubit and controlled on the third and fourth qubits respectively) propagating $ZIZZ$ to $ZIII$.
 These gates are also applied to all the other stabilziers: $ZZZX$ here.
 
@@ -69,7 +69,7 @@ is selected at random.
 This locally optimized approach has been tested on a range of randomly selected codes and consistently produces 
 significantly cheaper encoding circuits than the existing methods, particularly for non-CSS codes.
 
-Finally, the algorithm also tracks the phases of stabilizers. If necessary, Pauli-$X$ gates are applied to correct signs. 
+Finally, the algorithm also tracks the phases of stabilizers. If necessary, Pauli $X$ gates are applied to correct signs. 
 We’ve also implemented some optimizations to reduce the depth of the applied CNOT layers. There is still ample room for 
 further improvement - please contact me if you're interested in contributing or extending this work.
 
@@ -91,7 +91,7 @@ five_qubit_code_logical_X = np.array([[0,1,1,1,1,1]])
 
 Here, the first column encodes the phase of each stabilizer, ```0``` for a +1 phase and ```2``` for a -1 phase.
 The remaining columns represent the Pauli operator acting on each qubit: ```0```, ```1```, ```2```, and ```3``` represent 
-the identity, Pauli-$X$, -$Y$, and -$Z$ respectively.
+the identity, Pauli $X$, $Y$, and $Z$ respectively.
 One can create a ```Code``` object as follows:
 
 ```python

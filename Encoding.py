@@ -836,7 +836,7 @@ def import_code(file_name: str) -> Code:
         phases = np.zeros((row_num, 1))
         H = np.c_[phases, H]
 
-        code = Code(H, np.array([[]]))
+        code = Code(H)
 
         return code
 
